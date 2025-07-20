@@ -1,7 +1,6 @@
 package com.example.ToDoList.controller;
 
 import com.example.ToDoList.model.Status;
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 public class Tasks {

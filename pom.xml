@@ -68,11 +68,6 @@
 			<version>2.8.9</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.mysql</groupId>
-			<artifactId>mysql</artifactId>
-			<version>9.4-1200-jdbc4</version>
-		</dependency>
 	</dependencies>
 
 	<build>

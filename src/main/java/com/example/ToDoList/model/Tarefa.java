@@ -1,9 +1,8 @@
 package com.example.ToDoList.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Tarefa {
@@ -12,7 +11,11 @@ public class Tarefa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "a descrição é obrigatório")
     private String descricao;
+
+    @NotNull(message = "o status é obrigatório")
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     public Tarefa() {
